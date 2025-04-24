@@ -1,6 +1,6 @@
 script_name("FM5KOS Near")
 script_author("Hammond")
--- Script Fixed by Alex Maisil
+-- Special thanks to Alex Maisil for fixing the script.
 
 require"lib.moonloader"
 require"lib.sampfuncs"
