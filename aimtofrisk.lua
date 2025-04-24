@@ -1,7 +1,8 @@
+script_name("aimtocharge")
+script_author("Hammond")
+
 require"lib.moonloader"
 require"lib.sampfuncs"
-
-
 
 function main()
     while not isSampAvailable() do wait(100) end
