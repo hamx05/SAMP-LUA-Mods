@@ -2,16 +2,6 @@
 #MaxHotkeysPerInterval 9999
 ----------------------------------------------------------------------------------------------------------------
 -------------------------------------------- Alt + KEYPAD BINDS -----=------------------------------------------
-!o::
-SendInput tYou have been casefiled by the Federal Bureau of Investigation.{enter}
-Sleep 2000
-SendInput tThis casefile includes your personal details and evidence linking you to criminal activities.{enter}
-Sleep 2000
-SendInput tHence, an agent from the Criminal Investigation Division is arresting you.{enter}
-Sleep 2000
-SendInput tIn case of any uncertainties, your legal counsel can examine your casefile on our website ((FORUMS)).{enter}
-return
-
 !z::
 sleep 50
 sendinput t/usepot{enter}
@@ -35,11 +25,6 @@ F2::
 sleep 50
 sendinput t/lock{enter}
 sleep 20
-return
-
-!y::
-sleep 50
-Sendinput t/s ARES HERE NIGGA{!} PUT YOUR HANDS UP IN THE AIR RIGHT FUCKING NOW{!} ((/handsup)){enter}
 return
 
 !e::
@@ -81,43 +66,7 @@ RCtrl::
 sleep 50
 SendInput t/nos{enter}
 Return
----------------------------------- ALT + NUMPAD BINDS ---------------------------------------
-!1::
-sleep 50
-SendInput t/su  Posession of controlled substances{left 35}
-Return
-!2::
-sleep 50
-SendInput t/su  Posession of illegal firearms{left 30}
-Return
-!3::
-sleep 50
-SendInput t/su  Attempted murder{left 17}
-Return
-!4::
-sleep 50
-SendInput t/su  Discharge of firearm in public{left 31}
-Return
-!5::
-sleep 50
-SendInput t/su  Resisting a LEO{left 16}
-Return
-!6::
-sleep 50
-SendInput t/su  Reckless driving{left 17}
-Return
-!7::
-sleep 50
-SendInput t/su  Aidding and Abetting{left 21}
-Return
-!8::
-sleep 50
-SendInput t/su  Speeding{left 9}
-Return
-!9::
-sleep 50
-SendInput t/su  Trespassing{left 12}
-Return
+
 ------------------------------------- TYPING BINDS -------------------------------------------------
 ------------------------------------ General Commands -----------------------------------
 :?:t/rb::
@@ -176,7 +125,7 @@ return
 
 :?:t/yes::
 sleep 100
-sendinput t/backup{enter}
+sendinput t/fbackup{enter}
 sleep 50
 return
 
@@ -302,33 +251,14 @@ return
 
 :?:/aas::
 sleep 300
-sendinput t/d Any active situation?{enter}
+sendinput t/pr Any active situation?{enter}
 sleep 20
 return
 
-:?:/bg::
-sleep 500
-sendinput t/badge{enter}
-sleep 200
-return
-
-:?:/mrights::
-sleep 2000
-SendInput tYou have the right to remain silent when questioned.{enter}
-sleep 2000
-SendInput tAnything you say or do may be used against you in a court of law.{enter}
-sleep 2000
-SendInput tYou have the right to an attorney.{enter}
-sleep 2000
-SendInput tIf you cannot afford an attorney, one will be appointed for you.
-sleep 2000
-SendInput tDo you understand these rights as I have read them to you?
-sleep 500
-return
 
 :?:/omw::
 sleep 500
-SendInput t/d Enroute to your beacon{!}{enter}
+SendInput t/pr Enroute to your beacon{!}{enter}
 sleep 20
 return
 
@@ -349,6 +279,7 @@ sleep 250
 sendinput t/me takes out a morphine srynge and injects it.{enter}
 sendinput t/faid{enter}
 return
+
 --------------------------- Set Suspect ----------------------
 :?:/sus::
 sleep 500
@@ -367,43 +298,3 @@ return
 Sendinput /leavejob 2{enter}
 Sendinput t/join{enter}
 return
-
-:?:/mdcyes::
-
-sleep 1000
-sendinput t/me moves towards his car - as he pulls the driver door.{enter}
-sleep 2000
-sendinput t/cardoor 1{enter}
-sleep 4000
-sendinput t/me bends down as he pushes himself in the car - pulling the door closed.{enter}
-sleep 4000
-sendinput t/do I would now be sitting on the driver's seat.{Enter}
-sleep 4000
-sendinput t/me shifts to his right - logging on MDC as he then runs a check on the licenses.{enter}
-sleep 4000
-sendinput t/do Driver's licenses passed.{enter}
-sleep 4000
-sendinput t/me logs off the MDC - reaches his hands to the lock - unlocking the door.{enter}
-sleep 4000
-sendinput t/me slowly gets outta car - shutting the door behind him as he then moves towards them.{enter}
-sleep 100
-return
-
-:?:/mdcno::
-sleep 1000
-sendinput t/me moves towards his car - as he pulls the driver door.{enter}
-sleep 4000
-sendinput t/cardoor 1{enter}
-sleep 4000
-sendinput t/me bends down as he pushes himself in the car - pulling the door closed.{enter}
-sleep 4000
-sendinput t/do I would now be sitting on the driver's seat.{Enter}
-sleep 4000
-sendinput t/me shifts to his right - logging on MDC as he then runs a check on the licenses.{enter}
-sleep 4000
-sendinput t/do Driver's license not passed.{enter}
-sleep 4000
-sendinput t/me logs off the MDC - reaches his hands to the lock - unlocking the door.{enter}
-sleep 4000
-sendinput t/me slowly gets outta car - shutting the door behind him as he then moves towards them.{enter}
-sleep 100
